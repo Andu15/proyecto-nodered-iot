@@ -1,0 +1,2129 @@
+[
+    {
+        "id": "f63e9df3a2c662b4",
+        "type": "tab",
+        "label": "Proyecto Fin de Curso",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "aff1329bb94ae713",
+        "type": "group",
+        "z": "f63e9df3a2c662b4",
+        "name": "Topic – 2. Lectura información del host",
+        "style": {
+            "stroke": "none",
+            "fill": "#bfdbef",
+            "fill-opacity": "0.74",
+            "label": true,
+            "label-position": "n",
+            "color": "#0070c0"
+        },
+        "nodes": [
+            "229083f842e78be9",
+            "114a2007deb73faa",
+            "80353a5badca1320",
+            "fdccf5f8f3d9aeb5",
+            "76c503cc3692f75f"
+        ],
+        "x": 354,
+        "y": 919,
+        "w": 512,
+        "h": 262
+    },
+    {
+        "id": "97042ffa06f0612e",
+        "type": "group",
+        "z": "f63e9df3a2c662b4",
+        "name": "Topic – 3. Lectura de puertos I/O",
+        "style": {
+            "stroke": "none",
+            "label": true,
+            "color": "#000000",
+            "fill": "#e3f3d3",
+            "label-position": "n"
+        },
+        "nodes": [
+            "ec9fd672eb73e370",
+            "516f026ce37d330c",
+            "95dd5fc364467624",
+            "a74cf1f884873270",
+            "dc9f5ec0cddda82a"
+        ],
+        "x": 354,
+        "y": 1239,
+        "w": 512,
+        "h": 262
+    },
+    {
+        "id": "1d579b820d637a96",
+        "type": "group",
+        "z": "f63e9df3a2c662b4",
+        "name": "Topic – 4. Control de pines I/O",
+        "style": {
+            "stroke": "none",
+            "fill": "#dbcbe7",
+            "label": true,
+            "label-position": "n",
+            "color": "#6f2fa0"
+        },
+        "nodes": [
+            "bb69b9af9c1b24e4",
+            "385a72f0da1302d1",
+            "5c01a1b160167930",
+            "fb3fcd928f1e1276"
+        ],
+        "x": 354,
+        "y": 1559,
+        "w": 572,
+        "h": 202
+    },
+    {
+        "id": "2ed5e925e8cb4dac",
+        "type": "group",
+        "z": "f63e9df3a2c662b4",
+        "name": "Topic – 5. Ejecutar un test de velocidad",
+        "style": {
+            "stroke": "none",
+            "fill": "#ffefbf",
+            "label": true,
+            "label-position": "n",
+            "color": "#000000"
+        },
+        "nodes": [
+            "9ce9a3c149cce28d",
+            "3698760b63a2dbed",
+            "d728064e73d1b107",
+            "cacde3560972d83a",
+            "4e201043edfb2432"
+        ],
+        "x": 354,
+        "y": 1819,
+        "w": 592,
+        "h": 302
+    },
+    {
+        "id": "b19119c707c0bff7",
+        "type": "mqtt-broker",
+        "name": "EMQX",
+        "broker": "broker.emqx.io",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "fa85b9c4197523ae",
+        "type": "ui-base",
+        "name": "My Dashboard",
+        "path": "/dashboard",
+        "appIcon": "",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "headerContent": "page",
+        "navigationStyle": "default",
+        "titleBarStyle": "default",
+        "showReconnectNotification": true,
+        "notificationDisplayTime": 1,
+        "showDisconnectNotification": true,
+        "allowInstall": false
+    },
+    {
+        "id": "535b62e072ff91b1",
+        "type": "ui-theme",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#0094ce",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "4c4f48c3e3ecf021",
+        "type": "ui-page",
+        "name": "Estación Ambiental IoT",
+        "ui": "fa85b9c4197523ae",
+        "path": "/page1",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "535b62e072ff91b1",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 1,
+        "className": "",
+        "visible": true,
+        "disabled": false
+    },
+    {
+        "id": "c21a438060ff2651",
+        "type": "ui-group",
+        "name": "Tiempo Real",
+        "page": "4c4f48c3e3ecf021",
+        "width": "12",
+        "height": "3",
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "9a1eaad669938b74",
+        "type": "ui-group",
+        "name": "Histórico",
+        "page": "4c4f48c3e3ecf021",
+        "width": "12",
+        "height": "4",
+        "order": 3,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "1ea3578e76ab2f4f",
+        "type": "ui-group",
+        "name": "Información general",
+        "page": "4c4f48c3e3ecf021",
+        "width": "12",
+        "height": "1",
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "feb647d93126fefa",
+        "type": "ui-page",
+        "name": "Monitor del Sistema",
+        "ui": "fa85b9c4197523ae",
+        "path": "/page2",
+        "icon": "mdi-weather-cloudy-clock",
+        "layout": "grid",
+        "theme": "535b62e072ff91b1",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 2,
+        "className": "",
+        "visible": true,
+        "disabled": false
+    },
+    {
+        "id": "53ed82d446b689b7",
+        "type": "ui-page",
+        "name": "Control Dispositivo",
+        "ui": "fa85b9c4197523ae",
+        "path": "/page3",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "535b62e072ff91b1",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 3,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "90a0d7c60623ca64",
+        "type": "ui-group",
+        "name": "Sistema",
+        "page": "feb647d93126fefa",
+        "width": "4",
+        "height": "1",
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "e163b4f09d71b30a",
+        "type": "ui-group",
+        "name": "Información de CPU y RAM",
+        "page": "feb647d93126fefa",
+        "width": "8",
+        "height": "1",
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "6919d6238db7a861",
+        "type": "ui-group",
+        "name": "Ubicación",
+        "page": "feb647d93126fefa",
+        "width": "8",
+        "height": 1,
+        "order": 3,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "4c97f285f35a8e9e",
+        "type": "ui-group",
+        "name": "Test de velocidad",
+        "page": "feb647d93126fefa",
+        "width": "4",
+        "height": 1,
+        "order": 4,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "cf665168f3ae07f2",
+        "type": "mqtt in",
+        "z": "f63e9df3a2c662b4",
+        "name": "Lee sensor ambiental",
+        "topic": "isil/stations/001/env_sensors/data",
+        "qos": "0",
+        "datatype": "json",
+        "broker": "b19119c707c0bff7",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 200,
+        "y": 460,
+        "wires": [
+            [
+                "e7753904cfdc77cf",
+                "01a5d4498a44a9c1",
+                "7822c0f198eadf7c",
+                "c6d08ff2bdbb6824",
+                "dd495038fcadb737",
+                "ab8d9aafad5b4ac6",
+                "1a5b485d6020fedf",
+                "33f32451578b1f74",
+                "6a97d85dfa99c0ca"
+            ]
+        ]
+    },
+    {
+        "id": "c04cb588ba948258",
+        "type": "comment",
+        "z": "f63e9df3a2c662b4",
+        "name": "Suscripcion",
+        "info": "",
+        "x": 170,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "e7753904cfdc77cf",
+        "type": "debug",
+        "z": "f63e9df3a2c662b4",
+        "name": "debug 1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 560,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "a3f85c54c46367e6",
+        "type": "ui-gauge",
+        "z": "f63e9df3a2c662b4",
+        "name": "Temperatura",
+        "group": "c21a438060ff2651",
+        "order": 1,
+        "value": "payload.temperatureC",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "°C",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "15",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "30",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "40",
+        "sizeThickness": "20",
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 970,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d9b246f4b671a085",
+        "type": "ui-chart",
+        "z": "f63e9df3a2c662b4",
+        "group": "9a1eaad669938b74",
+        "name": "Grafica",
+        "label": "Data Historica de la estación",
+        "order": 1,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "Tiempo",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "{HH}:{mm}:{ss}",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "T/H",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": "",
+        "ymax": "",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": "2",
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#0095ff",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": "9",
+        "height": "6",
+        "className": "",
+        "interpolation": "smooth",
+        "x": 960,
+        "y": 800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1a5b485d6020fedf",
+        "type": "change",
+        "z": "f63e9df3a2c662b4",
+        "name": "Set TemperaturaC",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.temperatureC",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Temperatura (°C)",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 690,
+        "y": 720,
+        "wires": [
+            [
+                "d9b246f4b671a085",
+                "94fda453b14433fc"
+            ]
+        ]
+    },
+    {
+        "id": "33f32451578b1f74",
+        "type": "change",
+        "z": "f63e9df3a2c662b4",
+        "name": "Set Humidity",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.humidity",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Humedad (%)",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 670,
+        "y": 780,
+        "wires": [
+            [
+                "d9b246f4b671a085",
+                "1abe941fad9976d2"
+            ]
+        ]
+    },
+    {
+        "id": "7822c0f198eadf7c",
+        "type": "change",
+        "z": "f63e9df3a2c662b4",
+        "name": "Redondear TemperaturaC",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.temperatureC",
+                "pt": "msg",
+                "to": "$round(payload.temperatureC,2)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 710,
+        "y": 300,
+        "wires": [
+            [
+                "a3f85c54c46367e6"
+            ]
+        ]
+    },
+    {
+        "id": "f402e547961353c7",
+        "type": "ui-gauge",
+        "z": "f63e9df3a2c662b4",
+        "name": "Intensidad Luminosa",
+        "group": "c21a438060ff2651",
+        "order": 4,
+        "value": "payload.luminousIntensity",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "Lux",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "200",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "500",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "1000",
+        "sizeThickness": "20",
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 1000,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dd495038fcadb737",
+        "type": "ui-gauge",
+        "z": "f63e9df3a2c662b4",
+        "name": "Presión atmosférica",
+        "group": "c21a438060ff2651",
+        "order": 3,
+        "value": "payload.atmosphericPressure",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "mgH",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "652",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "758",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "762",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": "652",
+        "max": "814",
+        "sizeThickness": "20",
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 1000,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "09cd9cc6910c179d",
+        "type": "ui-gauge",
+        "z": "f63e9df3a2c662b4",
+        "name": "Humedad",
+        "group": "c21a438060ff2651",
+        "order": 2,
+        "value": "payload.humidity",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "%",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "45",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "60",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": "20",
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 960,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c6d08ff2bdbb6824",
+        "type": "change",
+        "z": "f63e9df3a2c662b4",
+        "name": "Redondear Humedad",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.humidity",
+                "pt": "msg",
+                "to": "$round(payload.humidity,2)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 700,
+        "y": 360,
+        "wires": [
+            [
+                "09cd9cc6910c179d"
+            ]
+        ]
+    },
+    {
+        "id": "95213df104fde833",
+        "type": "status",
+        "z": "f63e9df3a2c662b4",
+        "name": "Estado del sensor",
+        "scope": [
+            "cf665168f3ae07f2"
+        ],
+        "x": 190,
+        "y": 160,
+        "wires": [
+            [
+                "aff754f6a77a1271"
+            ]
+        ]
+    },
+    {
+        "id": "aff754f6a77a1271",
+        "type": "function",
+        "z": "f63e9df3a2c662b4",
+        "name": "Detectar estado",
+        "func": "let conectado = msg.status.fill === 'green';\nflow.set('estadoConectado', conectado);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 680,
+        "y": 160,
+        "wires": [
+            [
+                "319eeb2791767e4c"
+            ]
+        ]
+    },
+    {
+        "id": "01a5d4498a44a9c1",
+        "type": "function",
+        "z": "f63e9df3a2c662b4",
+        "name": "Guardar última lectura",
+        "func": "flow.set('ultimaFecha', msg.payload.date);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 700,
+        "y": 220,
+        "wires": [
+            [
+                "319eeb2791767e4c"
+            ]
+        ]
+    },
+    {
+        "id": "319eeb2791767e4c",
+        "type": "function",
+        "z": "f63e9df3a2c662b4",
+        "name": "Armar payload estado",
+        "func": "msg.payload = {\n    connected: flow.get('estadoConectado') || false,\n    lastUpdate: flow.get('ultimaFecha') || '--:--:--'\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 980,
+        "y": 160,
+        "wires": [
+            [
+                "dc617dabf841b543"
+            ]
+        ]
+    },
+    {
+        "id": "dc617dabf841b543",
+        "type": "ui-template",
+        "z": "f63e9df3a2c662b4",
+        "group": "1ea3578e76ab2f4f",
+        "page": "",
+        "ui": "",
+        "name": "Card Info General",
+        "order": 1,
+        "width": "12",
+        "height": "6",
+        "head": "",
+        "format": "<template>\n    <div>\n        <div style=\"display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:14px; border: 1px solid rgba(15,110,86,0.1); padding: 10px 20px;\"\n            v-if=\"msg && msg.payload\">\n            <div style=\"display:flex; align-items:center; gap:8px;\">\n                <div\n                    :style=\"{width:'20px', height:'20px', borderRadius:'50%', background: msg.payload.connected ? '#0F6E56' : '#A32D2D'}\">\n                </div>\n                <span style=\"font-weight:600; font-size:20px;\">{{ msg.payload.connected ? 'Conectado' : 'Desconectado' }}</span>\n                <span style=\"font-size:20px; opacity:0.6;\">Estación 001</span>\n            </div>\n            <span style=\"font-size:20px; opacity:0.7;\">Última lectura: {{ msg.payload.lastUpdate }}</span>\n        </div>\n\n        <!-- <hr style=\"margin-bottom:16px;\" /> -->\n\n        <div style=\"display:grid; grid-template-columns:1fr 1fr 1fr; gap:20px;\">\n            <div>\n                <div style=\"display:flex; gap:10px; align-items:center; margin-bottom:10px;\">\n                    <div class=\"icon-box\"><span class=\"mdi mdi-chip\" style=\"font-size:20px; color:#0F6E56;\"></span></div>\n                    <div>\n                        <p style=\"font-weight:600; font-size:20px; margin:0;\">Sensor</p>\n                        <p style=\"font-size:20px; opacity:0.6; margin:0;\">DFRobot BME680</p>\n                    </div>\n                </div>\n                <p class=\"section-label\">Parámetros medidos</p>\n                <div style=\"display:flex; flex-wrap:wrap; gap:5px; margin-bottom:12px;\">\n                    <span class=\"tag\" v-for=\"param in parametros\" :key=\"param\">{{ param }}</span>\n                </div>\n                <p class=\"subtitle\">Conexión</p>\n                <p class=\"subtitle-text\">I2C a 3.3V</p>\n            </div>\n\n            <div>\n                <div style=\"display:flex; gap:10px; align-items:center; margin-bottom:10px;\">\n                    <div class=\"icon-box\"><span class=\"mdi mdi-memory\" style=\"font-size:22px; color:#0F6E56;\"></span></div>\n                    <div>\n                        <p style=\"font-weight:600; font-size:20px; margin:0;\">Microcontrolador</p>\n                        <p style=\"font-size:20px; opacity:0.6; margin:0;\">Arduino UNO R4 WiFi</p>\n                    </div>\n                </div>\n                <p class=\"subtitle\">Función</p>\n                <p class=\"subtitle-text\">Lee el sensor y arma el JSON</p>\n                <p class=\"subtitle\">Frecuencia de envío</p>\n                <p class=\"subtitle-text\">Cada 10 s</p>\n                <p class=\"subtitle\">Salida</p>\n                <p class=\"subtitle-text\">Puerto serial</p>\n            </div>\n\n            <div>\n                <div style=\"display:flex; gap:10px; align-items:center; margin-bottom:10px;\">\n                    <div class=\"icon-box\"><span class=\"mdi mdi-raspberry-pi\" style=\"font-size:20px; color:#0F6E56;\"></span></div>\n                    <div>\n                        <p style=\"font-weight:600; font-size:20px; margin:0;\">Gateway</p>\n                        <p style=\"font-size:20px; opacity:0.6; margin:0;\">Raspberry Pi Zero 2W</p>\n                    </div>\n                </div>\n                <p class=\"subtitle\">Agente de control</p>\n                <p class=\"subtitle-text\">App Node-RED</p>\n                <p class=\"subtitle\">Base de datos local</p>\n                <p class=\"subtitle-text\">MariaDB</p>\n                <p class=\"subtitle\">Publica a</p>\n                <p class=\"subtitle-text\">Broker emqx &middot; mqtt://broker.emqx.io:1883</p>\n            </div>\n        </div>\n\n        <div\n            style=\"background:rgba(0,0,0,0.03); border-radius:8px; padding:10px 12px; font-size:15px; opacity:0.75; margin-top:16px;\">\n            Adicionalmente, la estación cuenta con 4 salidas digitales conectadas a un relé de 15A cada una y 3 salidas PWM,\n            todas disponibles para su acceso y control de manera remota.\n        </div>\n    </div>\n</template>\n<script>\n    export default {\n        data() {\n            return {\n                parametros: ['Temperatura', 'Humedad', 'Presión', 'Radiación solar', 'Intensidad lumínica', 'Altitud']\n            }\n        }\n    }\n</script>\n<style>\n.icon-box {\n    width: 36px;\n    height: 36px;\n    border-radius: 8px;\n    background: rgba(15,110,86,0.1);\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    flex-shrink: 0;\n}\n.section-label {\n    font-size: 10px;\n    text-transform: uppercase;\n    letter-spacing: 0.5px;\n    opacity: 0.45;\n    margin: 0 0 6px;\n    font-weight: 600;\n}\n.subtitle {\n    opacity: 0.5;\n    margin: 8px 0 2px;\n    font-size: 11px;\n}\n.subtitle-text {\n    margin: 0;\n    font-weight: 500;\n    font-size: 13px;\n}\n.tag {\n    background: rgba(15,110,86,0.08);\n    color: #0F6E56;\n    font-size: 10px;\n    padding: 3px 8px;\n    border-radius: 10px;\n    font-weight: 500;\n}\n</style>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1250,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ab8d9aafad5b4ac6",
+        "type": "change",
+        "z": "f63e9df3a2c662b4",
+        "name": "Redondear Intensidad Lumin",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.luminousIntensity",
+                "pt": "msg",
+                "to": "$round(payload.luminousIntensity,2)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 720,
+        "y": 480,
+        "wires": [
+            [
+                "f402e547961353c7"
+            ]
+        ]
+    },
+    {
+        "id": "62b3783195a80908",
+        "type": "ui-template",
+        "z": "f63e9df3a2c662b4",
+        "group": "c21a438060ff2651",
+        "page": "",
+        "ui": "",
+        "name": "Leyenda de rangos",
+        "order": 5,
+        "width": "12",
+        "height": "2",
+        "head": "",
+        "format": "<template>\n    <div class=\"legend-grid\">\n        <div class=\"legend-item\">\n            <p class=\"legend-title\"><span class=\"mdi mdi-thermometer\" style=\"font-size:14px;\"></span> Temperatura</p>\n            <div class=\"legend-row\"><span class=\"dot\" style=\"background:#EF9F27\"></span> 0–15 °C: frío</div>\n            <div class=\"legend-row\"><span class=\"dot\" style=\"background:#639922\"></span> 15–30 °C: confort</div>\n            <div class=\"legend-row\"><span class=\"dot\" style=\"background:#E24B4A\"></span> 30–40 °C: calor</div>\n        </div>\n        <div class=\"legend-item\">\n            <p class=\"legend-title\"><span class=\"mdi mdi-water-percent\" style=\"font-size:14px;\"></span> Humedad</p>\n            <div class=\"legend-row\"><span class=\"dot\" style=\"background:#EF9F27\"></span> 0–45%: seco</div>\n            <div class=\"legend-row\"><span class=\"dot\" style=\"background:#639922\"></span> 45–60%: confort</div>\n            <div class=\"legend-row\"><span class=\"dot\" style=\"background:#E24B4A\"></span> 60–100%: húmedo</div>\n        </div>\n        <div class=\"legend-item\">\n            <p class=\"legend-title\"><span class=\"mdi mdi-gauge\" style=\"font-size:14px;\"></span> Presión</p>\n            <div class=\"legend-row\"><span class=\"dot\" style=\"background:#E24B4A\"></span> 652–758 mgH: baja</div>\n            <div class=\"legend-row\"><span class=\"dot\" style=\"background:#639922\"></span> 758–762 mgH: normal</div>\n            <div class=\"legend-row\"><span class=\"dot\" style=\"background:#EF9F27\"></span> 762–814 mgH: alta</div>\n        </div>\n        <div class=\"legend-item\">\n            <p class=\"legend-title\"><span class=\"mdi mdi-white-balance-sunny\" style=\"font-size:14px;\"></span> Intensidad\n                lumínica</p>\n            <div class=\"legend-row\"><span class=\"dot\" style=\"background:#639922\"></span> 0–200 lux: interior</div>\n            <div class=\"legend-row\"><span class=\"dot\" style=\"background:#EF9F27\"></span> 200–500 lux: intermedia</div>\n            <div class=\"legend-row\"><span class=\"dot\" style=\"background:#E24B4A\"></span> 500–1000 lux: exterior</div>\n        </div>\n    </div>\n</template>\n<script>\n    export default { data() { return {} } }\n</script>\n<style>\n    .legend-grid {\n        display: grid;\n        grid-template-columns: repeat(4, 1fr);\n        gap: 16px;\n        font-size: 12px;\n    }\n\n    .legend-item {\n        padding: 15px;\n    }\n\n    .legend-title {\n        font-weight: 600;\n        margin: 0 0 6px;\n        display: flex;\n        align-items: center;\n        gap: 5px;\n        justify-content: center;\n    }\n\n    .legend-row {\n        display: flex;\n        align-items: center;\n        gap: 6px;\n        opacity: 0.75;\n        margin-bottom: 3px;\n        justify-content: space-between;\n    }\n\n    .dot {\n        width: 8px;\n        height: 8px;\n        border-radius: 50%;\n        flex-shrink: 0;\n    }\n</style>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 990,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6a97d85dfa99c0ca",
+        "type": "change",
+        "z": "f63e9df3a2c662b4",
+        "name": "Redondear Altura",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$round(payload.elevation,2)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 690,
+        "y": 600,
+        "wires": [
+            [
+                "e804de60eaa23a41"
+            ]
+        ]
+    },
+    {
+        "id": "e804de60eaa23a41",
+        "type": "ui-template",
+        "z": "f63e9df3a2c662b4",
+        "group": "c21a438060ff2651",
+        "page": "",
+        "ui": "",
+        "name": "Card Altura",
+        "order": 6,
+        "width": "12",
+        "height": "1",
+        "head": "",
+        "format": "<template>\n    <div style=\"display:flex; align-items:center; gap:14px;\">\n        <div class=\"icon-box\">\n            <span class=\"mdi mdi-image-filter-hdr\" style=\"font-size:26px; color:#0F6E56;\"></span>\n        </div>\n        <div>\n            <p style=\"font-size:22px; font-weight:600; margin:0;\">{{ msg && msg.payload !== undefined ?\n                msg.payload.toFixed(1) : '--' }} <span style=\"font-size:13px; opacity:0.5; font-weight:400;\">msnm</span>\n            </p>\n            <p style=\"font-size:12px; opacity:0.6; margin:2px 0 0;\">Altitud del sensor sobre el nivel del mar</p>\n        </div>\n    </div>\n</template>\n<script>\n    export default { data() { return {} } }\n</script>\n<style>\n    .icon-box {\n        width: 48px;\n        height: 48px;\n        border-radius: 12px;\n        background: rgba(15, 110, 86, 0.1);\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        flex-shrink: 0;\n    }\n</style>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 970,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "229083f842e78be9",
+        "type": "comment",
+        "z": "f63e9df3a2c662b4",
+        "g": "aff1329bb94ae713",
+        "name": "Publicacion - Request del host",
+        "info": "",
+        "x": 510,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "114a2007deb73faa",
+        "type": "inject",
+        "z": "f63e9df3a2c662b4",
+        "g": "aff1329bb94ae713",
+        "name": "Pedir info del host",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "isil/stations/001/commands",
+        "payload": "{\"key\":\"host\"}",
+        "payloadType": "json",
+        "x": 490,
+        "y": 1020,
+        "wires": [
+            [
+                "35934878d2fcbbf6"
+            ]
+        ]
+    },
+    {
+        "id": "76c503cc3692f75f",
+        "type": "mqtt in",
+        "z": "f63e9df3a2c662b4",
+        "g": "aff1329bb94ae713",
+        "name": "Información del Host",
+        "topic": "isil/stations/001/commands/host",
+        "qos": "0",
+        "datatype": "json",
+        "broker": "b19119c707c0bff7",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 470,
+        "y": 1140,
+        "wires": [
+            [
+                "fdccf5f8f3d9aeb5",
+                "f320c9ea545b16ca"
+            ]
+        ]
+    },
+    {
+        "id": "80353a5badca1320",
+        "type": "comment",
+        "z": "f63e9df3a2c662b4",
+        "g": "aff1329bb94ae713",
+        "name": "Suscripcion - Response del host",
+        "info": "",
+        "x": 510,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "fdccf5f8f3d9aeb5",
+        "type": "debug",
+        "z": "f63e9df3a2c662b4",
+        "g": "aff1329bb94ae713",
+        "name": "debug 2",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "ec9fd672eb73e370",
+        "type": "inject",
+        "z": "f63e9df3a2c662b4",
+        "g": "97042ffa06f0612e",
+        "name": "Pedir info de puertos",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "isil/stations/001/commands",
+        "payload": "{\"key\":\"status\"}",
+        "payloadType": "json",
+        "x": 500,
+        "y": 1320,
+        "wires": [
+            [
+                "35934878d2fcbbf6"
+            ]
+        ]
+    },
+    {
+        "id": "516f026ce37d330c",
+        "type": "comment",
+        "z": "f63e9df3a2c662b4",
+        "g": "97042ffa06f0612e",
+        "name": "Publicacion - Request de puertos I/O",
+        "info": "",
+        "x": 530,
+        "y": 1280,
+        "wires": []
+    },
+    {
+        "id": "95dd5fc364467624",
+        "type": "mqtt in",
+        "z": "f63e9df3a2c662b4",
+        "g": "97042ffa06f0612e",
+        "name": "Lee Info de Puertos",
+        "topic": "isil/stations/001/commands/status",
+        "qos": "0",
+        "datatype": "json",
+        "broker": "b19119c707c0bff7",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 470,
+        "y": 1460,
+        "wires": [
+            [
+                "dc9f5ec0cddda82a",
+                "6f3e38567ce3c34f"
+            ]
+        ]
+    },
+    {
+        "id": "a74cf1f884873270",
+        "type": "comment",
+        "z": "f63e9df3a2c662b4",
+        "g": "97042ffa06f0612e",
+        "name": "Suscripcion - Response de puertos",
+        "info": "",
+        "x": 520,
+        "y": 1400,
+        "wires": []
+    },
+    {
+        "id": "dc9f5ec0cddda82a",
+        "type": "debug",
+        "z": "f63e9df3a2c662b4",
+        "g": "97042ffa06f0612e",
+        "name": "debug 3",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 1400,
+        "wires": []
+    },
+    {
+        "id": "f320c9ea545b16ca",
+        "type": "function",
+        "z": "f63e9df3a2c662b4",
+        "name": "Procesar host",
+        "func": "let d = msg.payload;\nconst gb = 1024 * 1024 * 1024;\n\nif (!d || !d.host || !d.memory || !d.cpu || !d.drive) {\n    node.warn(\"Procesar host: payload incompleto, se ignora\");\n    return null;\n}\n\nlet raw = d.host.time;\nlet match = raw.match(/(\\w+) (\\d+) (\\w+) (\\d+):(\\d+):(\\d+)/);\n\nlet meses = { Jan:'ene', Feb:'feb', Mar:'mar', Apr:'abr', May:'may', Jun:'jun', Jul:'jul', Aug:'ago', Sep:'sep', Oct:'oct', Nov:'nov', Dec:'dic' };\nlet diasSemana = { Mon:'lun', Tue:'mar', Wed:'mié', Thu:'jue', Fri:'vie', Sat:'sáb', Sun:'dom' };\n\nlet fechaLegible = match\n    ? `${diasSemana[match[1]]} ${match[2]} ${meses[match[3]]}, ${match[4]}:${match[5]}:${match[6]}`\n    : raw;\n\nmsg.payload = {\n    hostname: d.host.hostname,\n    address: d.host.address,\n    time: d.host.time,\n    fechaLegible: fechaLegible,\n    diskAvailable: d.drive.disk_available,\n    diskUsed: d.drive.disk_used,\n    diskTotal: d.drive.disk_total,\n    // diskUsage: d.drive.disk_usage,\n    diskUsage: parseFloat(d.drive.disk_usage),\n    diskUsageText: d.drive.disk_usage,\n    // cpuUsage: d.cpu.cpu_usage,\n    cpuUsage: parseFloat(d.cpu.cpu_usage),\n    cpuTemp: d.cpu.cpu_temp.replace(\"temp=\", \"\").replace(\"'C\",\"\"),\n    cpuTempText: d.cpu.cpu_temp.replace(\"temp=\", \"\").replace(\"'C\",\" °C\"),\n    // memTotal: d.memory.total_mem,\n    memTotal: (d.memory.total_mem/gb).toFixed(2)+\"GB\",\n    // memFree: d.memory.free_mem,\n    memFree: (d.memory.free_mem/gb).toFixed(2)+\"GB\",\n    // memUsage: d.memory.mem_usage.toFixed(1),\n    memUsage: parseFloat(d.memory.mem_usage.toFixed(1)),\n    locationLat: d.location.lat.toFixed(4),\n    locationLon: d.location.lon.toFixed(4)\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 980,
+        "y": 1140,
+        "wires": [
+            [
+                "2e0c08d9437563f1",
+                "d9b9513668a77d6b",
+                "443ba29ee40a4f90",
+                "b3bfa8ac84d008fe",
+                "f58ff8ef2a432c4d",
+                "0463da3b1494db0a",
+                "862bbd56f56674ec",
+                "e3497259f7244c7f",
+                "c0381651c6c87b51",
+                "dd5a780402381f06",
+                "8e3bd57e6de80f07",
+                "780b5ed32649d266"
+            ]
+        ]
+    },
+    {
+        "id": "6f3e38567ce3c34f",
+        "type": "function",
+        "z": "f63e9df3a2c662b4",
+        "name": "Procesar estado I/O",
+        "func": "msg.payload = {\n    messageType: msg.payload.messageType,\n    input1: msg.payload.input1,\n    input2: msg.payload.input2,\n    relay1: msg.payload.relay1,\n    relay2: msg.payload.relay2,\n    relay3: msg.payload.relay3,\n    relay4: msg.payload.relay4,\n    pwm1: msg.payload.pwm1,\n    pwm2: msg.payload.pwm2,\n    pwm3: msg.payload.pwm3,\n    date: msg.payload.date\n};\nflow.set('estadoIO', msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1000,
+        "y": 1460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bb69b9af9c1b24e4",
+        "type": "comment",
+        "z": "f63e9df3a2c662b4",
+        "g": "1d579b820d637a96",
+        "name": "Publicacion - Request de puertos I/O",
+        "info": "",
+        "x": 530,
+        "y": 1600,
+        "wires": []
+    },
+    {
+        "id": "385a72f0da1302d1",
+        "type": "inject",
+        "z": "f63e9df3a2c662b4",
+        "g": "1d579b820d637a96",
+        "name": "Prueba Relay 1 ON",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "isil/stations/001/commands",
+        "payload": "{\"type\":\"relay\",\"id\":\"1\",\"value\":1}",
+        "payloadType": "json",
+        "x": 490,
+        "y": 1660,
+        "wires": [
+            [
+                "5c01a1b160167930"
+            ]
+        ]
+    },
+    {
+        "id": "77a0148cb7e895f2",
+        "type": "debug",
+        "z": "f63e9df3a2c662b4",
+        "name": "debug 4",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1080,
+        "y": 1640,
+        "wires": []
+    },
+    {
+        "id": "5c01a1b160167930",
+        "type": "function",
+        "z": "f63e9df3a2c662b4",
+        "g": "1d579b820d637a96",
+        "name": "Armar comando I/O",
+        "func": "msg.payload = {\n    key: msg.payload.type,   // \"relay\" o \"pwm\"\n    id: msg.payload.id,      // \"1\" a \"4\" (relay) o \"1\" a \"2\" (pwm)\n    value: msg.payload.value // 1/0 para relay, 0-255 para pwm\n};\nmsg.topic = \"isil/stations/001/commands\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 1700,
+        "wires": [
+            [
+                "35934878d2fcbbf6",
+                "77a0148cb7e895f2"
+            ]
+        ]
+    },
+    {
+        "id": "9ce9a3c149cce28d",
+        "type": "comment",
+        "z": "f63e9df3a2c662b4",
+        "g": "2ed5e925e8cb4dac",
+        "name": "Publicacion - Request de test de velocidad",
+        "info": "",
+        "x": 540,
+        "y": 1860,
+        "wires": []
+    },
+    {
+        "id": "3698760b63a2dbed",
+        "type": "inject",
+        "z": "f63e9df3a2c662b4",
+        "g": "2ed5e925e8cb4dac",
+        "name": "Solicitar speedtest",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "isil/stations/001/commands",
+        "payload": "{\"key\":\"speedtest\"}",
+        "payloadType": "json",
+        "x": 490,
+        "y": 1920,
+        "wires": [
+            [
+                "35934878d2fcbbf6"
+            ]
+        ]
+    },
+    {
+        "id": "d728064e73d1b107",
+        "type": "comment",
+        "z": "f63e9df3a2c662b4",
+        "g": "2ed5e925e8cb4dac",
+        "name": "Suscripcion - Response de test de velocidad",
+        "info": "",
+        "x": 550,
+        "y": 2020,
+        "wires": []
+    },
+    {
+        "id": "cacde3560972d83a",
+        "type": "mqtt in",
+        "z": "f63e9df3a2c662b4",
+        "g": "2ed5e925e8cb4dac",
+        "name": "Lee SpeedTest",
+        "topic": "isil/stations/001/commands/speedtest",
+        "qos": "0",
+        "datatype": "json",
+        "broker": "b19119c707c0bff7",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 460,
+        "y": 2080,
+        "wires": [
+            [
+                "4e201043edfb2432",
+                "577eaa13c70c693e"
+            ]
+        ]
+    },
+    {
+        "id": "4e201043edfb2432",
+        "type": "debug",
+        "z": "f63e9df3a2c662b4",
+        "g": "2ed5e925e8cb4dac",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 840,
+        "y": 2020,
+        "wires": []
+    },
+    {
+        "id": "35934878d2fcbbf6",
+        "type": "mqtt out",
+        "z": "f63e9df3a2c662b4",
+        "name": "Broker EMQX (mqtt out)",
+        "topic": "",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "b19119c707c0bff7",
+        "x": 210,
+        "y": 1480,
+        "wires": []
+    },
+    {
+        "id": "fb3fcd928f1e1276",
+        "type": "inject",
+        "z": "f63e9df3a2c662b4",
+        "g": "1d579b820d637a96",
+        "name": "Prueba PWM 2",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "isil/stations/001/commands",
+        "payload": "{\"key\":\"pwm\",\"id\":\"2\",\"value\":128}",
+        "payloadType": "json",
+        "x": 480,
+        "y": 1720,
+        "wires": [
+            [
+                "5c01a1b160167930"
+            ]
+        ]
+    },
+    {
+        "id": "94fda453b14433fc",
+        "type": "ui-gauge",
+        "z": "f63e9df3a2c662b4",
+        "name": "Temperatura2",
+        "group": "9a1eaad669938b74",
+        "order": 3,
+        "value": "payload",
+        "valueType": "msg",
+        "width": "3",
+        "height": "3",
+        "gtype": "gauge-tile",
+        "gstyle": "needle",
+        "title": "Temperatura",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "°C",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "15",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "30",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "40",
+        "sizeThickness": "20",
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 980,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1abe941fad9976d2",
+        "type": "ui-gauge",
+        "z": "f63e9df3a2c662b4",
+        "name": "Humedad2",
+        "group": "9a1eaad669938b74",
+        "order": 2,
+        "value": "payload",
+        "valueType": "msg",
+        "width": "3",
+        "height": "3",
+        "gtype": "gauge-tile",
+        "gstyle": "needle",
+        "title": "Humedad",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "%",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "45",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "60",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": "20",
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 970,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2e0c08d9437563f1",
+        "type": "ui-text",
+        "z": "f63e9df3a2c662b4",
+        "group": "90a0d7c60623ca64",
+        "order": 1,
+        "width": "4",
+        "height": "1",
+        "name": "Hostname",
+        "label": "💻 Hostname",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": true,
+        "font": "Arial,Arial,Helvetica,sans-serif",
+        "fontSize": "20",
+        "color": "#0f6e56",
+        "wrapText": false,
+        "className": "",
+        "value": "payload.hostname",
+        "valueType": "msg",
+        "x": 1250,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "d9b9513668a77d6b",
+        "type": "ui-text",
+        "z": "f63e9df3a2c662b4",
+        "group": "90a0d7c60623ca64",
+        "order": 2,
+        "width": "4",
+        "height": "1",
+        "name": "Address",
+        "label": "🌐 Dirección IP",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": true,
+        "font": "Arial,Arial,Helvetica,sans-serif",
+        "fontSize": "20",
+        "color": "#0f6e56",
+        "wrapText": true,
+        "className": "",
+        "value": "payload.address",
+        "valueType": "msg",
+        "x": 1240,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "443ba29ee40a4f90",
+        "type": "ui-text",
+        "z": "f63e9df3a2c662b4",
+        "group": "90a0d7c60623ca64",
+        "order": 3,
+        "width": "4",
+        "height": "1",
+        "name": "Datetime",
+        "label": "🕒 Fecha y Hora",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": true,
+        "font": "Arial,Arial,Helvetica,sans-serif",
+        "fontSize": "20",
+        "color": "#0f6e56",
+        "wrapText": true,
+        "className": "",
+        "value": "payload.fechaLegible",
+        "valueType": "msg",
+        "x": 1240,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "b3bfa8ac84d008fe",
+        "type": "ui-text",
+        "z": "f63e9df3a2c662b4",
+        "group": "90a0d7c60623ca64",
+        "order": 4,
+        "width": "4",
+        "height": "1",
+        "name": "Capacidad Total",
+        "label": "💾 Capacidad Total",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": true,
+        "font": "Arial,Arial,Helvetica,sans-serif",
+        "fontSize": "20",
+        "color": "#0f6e56",
+        "wrapText": true,
+        "className": "",
+        "value": "payload.diskTotal",
+        "valueType": "msg",
+        "x": 1260,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "f58ff8ef2a432c4d",
+        "type": "ui-text",
+        "z": "f63e9df3a2c662b4",
+        "group": "90a0d7c60623ca64",
+        "order": 5,
+        "width": "4",
+        "height": "1",
+        "name": "Espacio Disponible",
+        "label": "⬇️ Espacio Disponible",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": true,
+        "font": "Arial,Arial,Helvetica,sans-serif",
+        "fontSize": "20",
+        "color": "#0f6e56",
+        "wrapText": true,
+        "className": "",
+        "value": "payload.diskAvailable",
+        "valueType": "msg",
+        "x": 1270,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "0463da3b1494db0a",
+        "type": "ui-gauge",
+        "z": "f63e9df3a2c662b4",
+        "name": "Uso Disco",
+        "group": "90a0d7c60623ca64",
+        "order": 8,
+        "value": "payload.diskUsage",
+        "valueType": "msg",
+        "width": "4",
+        "height": "3",
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "📊 Uso del Disco",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "%",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "50",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "80",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 1250,
+        "y": 1120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "862bbd56f56674ec",
+        "type": "ui-text",
+        "z": "f63e9df3a2c662b4",
+        "group": "90a0d7c60623ca64",
+        "order": 6,
+        "width": "4",
+        "height": "1",
+        "name": "Espacio usado",
+        "label": "⬆️ Espacio usado",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": true,
+        "font": "Arial,Arial,Helvetica,sans-serif",
+        "fontSize": "20",
+        "color": "#0f6e56",
+        "wrapText": true,
+        "className": "",
+        "value": "payload.diskUsed",
+        "valueType": "msg",
+        "x": 1260,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "e3497259f7244c7f",
+        "type": "ui-gauge",
+        "z": "f63e9df3a2c662b4",
+        "name": "Uso CPU",
+        "group": "e163b4f09d71b30a",
+        "order": 2,
+        "value": "payload.cpuUsage",
+        "valueType": "msg",
+        "width": "4",
+        "height": "4",
+        "gtype": "gauge-34",
+        "gstyle": "needle",
+        "title": "Uso de CPU",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "%",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "50",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "80",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 1500,
+        "y": 1160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "40ffedc6d0b30e58",
+        "type": "ui-button",
+        "z": "f63e9df3a2c662b4",
+        "group": "4c97f285f35a8e9e",
+        "name": "Iniciar Test",
+        "label": "Iniciar Test",
+        "order": 1,
+        "width": "4",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "{\"key\":\"speedtest\"}",
+        "payloadType": "json",
+        "topic": "isil/stations/001/commands",
+        "topicType": "str",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 1070,
+        "y": 1960,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c0381651c6c87b51",
+        "type": "ui-text",
+        "z": "f63e9df3a2c662b4",
+        "group": "90a0d7c60623ca64",
+        "order": 7,
+        "width": "4",
+        "height": "1",
+        "name": "Uso Disco txt",
+        "label": "📀 Uso del Disco",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": true,
+        "font": "Arial,Arial,Helvetica,sans-serif",
+        "fontSize": "20",
+        "color": "#0f6e56",
+        "wrapText": true,
+        "className": "",
+        "value": "payload.diskUsageText",
+        "valueType": "msg",
+        "x": 1260,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "dd5a780402381f06",
+        "type": "ui-template",
+        "z": "f63e9df3a2c662b4",
+        "group": "e163b4f09d71b30a",
+        "page": "",
+        "ui": "",
+        "name": "Temperatura CPU",
+        "order": 3,
+        "width": "4",
+        "height": "4",
+        "head": "",
+        "format": "<template>\n    <div style=\"display:flex; align-items:center; gap:16px; border: 1px solid #0F6E56; padding:50px; margin:auto; border-radius:15px;\"\n        v-if=\"msg && msg.payload\">\n        <div class=\"thermo-icon\" :style=\"{background: estadoBg}\">\n            <span class=\"mdi mdi-thermometer\" style=\"font-size:36px;\" :style=\"{color: estadoColor}\"></span>\n        </div>\n        <div>\n            <p style=\"font-size:13px; opacity:0.6; margin:0 0 2px;\">Temperatura de CPU</p>\n            <p style=\"font-size:26px; font-weight:600; margin:0; color:gray;\">{{ msg.payload.cpuTemp }} °C</p>\n            <p style=\"font-size:13px; margin:4px 0 0;\">\n                Estado: <span :style=\"{color: estadoColor, fontWeight:600}\">{{ estadoTexto }}</span>\n            </p>\n        </div>\n    </div>\n</template>\n<script>\n    export default {\n        data() { return {} },\n        computed: {\n            temp() {\n                return this.msg && this.msg.payload ? parseFloat(this.msg.payload.cpuTemp) : 0;\n            },\n            estadoTexto() {\n                if (this.temp < 60) return \"Normal\";\n                if (this.temp < 75) return \"Elevada\";\n                return \"Crítica\";\n            },\n            estadoColor() {\n                if (this.temp < 60) return \"#639922\";\n                if (this.temp < 75) return \"#BA7517\";\n                return \"#A32D2D\";\n            },\n            estadoBg() {\n                if (this.temp < 60) return \"rgba(99,153,34,0.1)\";\n                if (this.temp < 75) return \"rgba(186,117,23,0.1)\";\n                return \"rgba(163,45,45,0.1)\";\n            }\n        }\n    }\n</script>\n<style>\n    .thermo-icon {\n        width: 56px;\n        height: 56px;\n        border-radius: 12px;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        flex-shrink: 0;\n    }\n</style>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1530,
+        "y": 1200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8e3bd57e6de80f07",
+        "type": "ui-template",
+        "z": "f63e9df3a2c662b4",
+        "group": "e163b4f09d71b30a",
+        "page": "",
+        "ui": "",
+        "name": "Memoria RAM",
+        "order": 5,
+        "width": "8",
+        "height": "4",
+        "head": "",
+        "format": "<template>\n    <div style=\"display:flex; align-items:center; gap:24px; width:100%; box-sizing:border-box;\"\n        v-if=\"msg && msg.payload\">\n        <div style=\"position:relative; width:140px; height:140px; flex-shrink:0;\">\n            <svg width=\"140\" height=\"140\" viewBox=\"0 0 140 140\">\n                <circle cx=\"70\" cy=\"70\" r=\"60\" fill=\"none\" stroke=\"rgba(99,153,34,0.15)\" stroke-width=\"12\" />\n                <circle cx=\"70\" cy=\"70\" r=\"60\" fill=\"none\" stroke=\"#639922\" stroke-width=\"12\" stroke-linecap=\"round\"\n                    :stroke-dasharray=\"circunferencia\" :stroke-dashoffset=\"offset\" transform=\"rotate(-90 70 70)\" />\n            </svg>\n            <div\n                style=\"position:absolute; top:0; left:0; width:100%; height:100%; display:flex; flex-direction:column; align-items:center; justify-content:center;\">\n                <span style=\"font-size:28px; font-weight:600;\">{{ memUsagePct }}%</span>\n                <span style=\"font-size:12px; opacity:0.6;\">Uso de RAM</span>\n            </div>\n        </div>\n\n        <div style=\"flex:1; min-width:0;\">\n            <div class=\"ram-row\">\n                <span class=\"dot\" style=\"background:#378ADD;\"></span>\n                <span class=\"ram-label\">Memoria Total</span>\n                <span class=\"ram-value\">{{ msg.payload.memTotal }}</span>\n            </div>\n            <div class=\"ram-row\">\n                <span class=\"dot\" style=\"background:#639922;\"></span>\n                <span class=\"ram-label\">Memoria Libre</span>\n                <span class=\"ram-value\">{{ msg.payload.memFree }}</span>\n            </div>\n            <div class=\"ram-row\">\n                <span class=\"dot\" style=\"background:#EF9F27;\"></span>\n                <span class=\"ram-label\">Memoria Usada</span>\n                <span class=\"ram-value\">{{ memUsagePct }} %</span>\n            </div>\n\n            <div class=\"bar-track\">\n                <div class=\"bar-fill\" :style=\"{width: memUsagePct + '%'}\"></div>\n            </div>\n        </div>\n    </div>\n</template>\n<script>\n    export default {\n        data() { return {} },\n        computed: {\n            memUsagePct() {\n                return this.msg && this.msg.payload ? parseFloat(this.msg.payload.memUsage) : 0;\n            },\n            circunferencia() {\n                return 2 * Math.PI * 60;\n            },\n            offset() {\n                let pct = this.memUsagePct / 100;\n                return this.circunferencia * (1 - pct);\n            }\n        }\n    }\n</script>\n<style>\n    .ram-row {\n        display: flex;\n        align-items: center;\n        gap: 8px;\n        margin-bottom: 12px;\n        font-size: 14px;\n    }\n\n    .dot {\n        width: 8px;\n        height: 8px;\n        border-radius: 50%;\n        flex-shrink: 0;\n    }\n\n    .ram-label {\n        flex: 1;\n        opacity: 0.7;\n    }\n\n    .ram-value {\n        font-weight: 500;\n        white-space: nowrap;\n    }\n\n    .bar-track {\n        height: 6px;\n        border-radius: 3px;\n        background: rgba(99, 153, 34, 0.15);\n        overflow: hidden;\n        margin-top: 4px;\n    }\n\n    .bar-fill {\n        height: 100%;\n        border-radius: 3px;\n        background: linear-gradient(90deg, #639922, #EF9F27);\n        transition: width 0.3s ease;\n    }\n</style>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1520,
+        "y": 1320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "780b5ed32649d266",
+        "type": "ui-template",
+        "z": "f63e9df3a2c662b4",
+        "group": "6919d6238db7a861",
+        "page": "",
+        "ui": "",
+        "name": "Ubicacion Mapa",
+        "order": 1,
+        "width": "8",
+        "height": "4",
+        "head": "",
+        "format": "<template>\n    <div class=\"card-container\" v-if=\"msg && msg.payload\">\n        <div class=\"coords-column\">\n            <!-- Tarjeta de Latitud -->\n            <div class=\"coord-card\">\n                <div class=\"icon-circle\">\n                    <!-- Icono de brújula/globo en verde principal -->\n                    <svg viewBox=\"0 0 24 24\" class=\"green-icon\">\n                        <path\n                            d=\"M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.53c-.26-.81-1-1.4-1.9-1.4h-1v-3c0-.55-.45-1-1-1h-6v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.4z\" />\n                    </svg>\n                </div>\n                <div class=\"coord-info\">\n                    <span class=\"coord-label\">Latitud</span>\n                    <span class=\"coord-value\">{{ lat }}</span>\n                </div>\n            </div>\n\n            <!-- Tarjeta de Longitud -->\n            <div class=\"coord-card\">\n                <div class=\"icon-circle\">\n                    <!-- Icono de brújula/globo en verde principal -->\n                    <svg viewBox=\"0 0 24 24\" class=\"green-icon\">\n                        <path\n                            d=\"M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.53c-.26-.81-1-1.4-1.9-1.4h-1v-3c0-.55-.45-1-1-1h-6v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.4z\" />\n                    </svg>\n                </div>\n                <div class=\"coord-info\">\n                    <span class=\"coord-label\">Longitud</span>\n                    <span class=\"coord-value\">{{ lon }}</span>\n                </div>\n            </div>\n        </div>\n\n        <!-- Columna Derecha: Nombre de Ubicación + Mapa Horizontal -->\n        <div class=\"map-column\">\n            <!-- Barra con el Nombre de la Ubicación -->\n            <div class=\"location-header\">\n                <span class=\"location-title\">Ubicación:</span>\n                <span class=\"location-text\">{{ locationName }}</span>\n            </div>\n        \n            <!-- Contenedor del Mapa (Formato panorámico) -->\n            <div class=\"map-wrapper\">\n                <iframe :src=\"mapUrl\" class=\"map-iframe\" loading=\"lazy\"></iframe>\n            </div>\n        </div>\n    </div>\n</template>\n\n<script>\n    export default {\n        data() { return {} },\n        computed: {\n            lat() {\n                return this.msg && this.msg.payload && this.msg.payload.locationLat !== undefined\n                    ? parseFloat(this.msg.payload.locationLat).toFixed(5) \n                    : '--';\n            },\n            lon() {\n                return this.msg && this.msg.payload && this.msg.payload.locationLon !== undefined\n                    ? parseFloat(this.msg.payload.locationLon).toFixed(5) \n                    : '--';\n            },\n            locationName() {\n                return this.msg && this.msg.payload && this.msg.payload.locationName \n                    ? this.msg.payload.locationName \n                    : 'Avenida Separadora Industrial, Ate, Lima, Perú';\n            },\n            mapUrl() {\n                if (!this.msg || !this.msg.payload) return '';\n                let lat = parseFloat(this.msg.payload.locationLat);\n                let lon = parseFloat(this.msg.payload.locationLon);\n                if (isNaN(lat) || isNaN(lon)) return '';\n                let delta = 0.005; // Zoom óptimo para ver calles de cerca\n                let bbox = [lon - delta, lat - delta, lon + delta, lat + delta].join(',');\n                return `https://www.openstreetmap.org/export/embed.html?bbox=${bbox}&marker=${lat},${lon}&layer=mapnik`;\n            }\n        }\n    }\n</script>\n\n<style>\n    .card-container {\n        display: flex;\n        align-items: center;\n        gap: 24px;\n        width: 100%;\n        box-sizing: border-box;\n    }\n\n    .coords-column {\n        display: flex;\n        flex-direction: column;\n        gap: 16px;\n        justify-content: center;\n        min-width: 240px;\n        flex-shrink: 0;\n    }\n\n    .coord-card {\n        background-color: rgba(15, 110, 86, 0.03);\n        border: 1px solid rgba(15, 110, 86, 0.1);\n        border-radius: 20px;\n        padding: 16px;\n        display: flex;\n        align-items: center;\n        gap: 16px;\n        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);\n    }\n\n    .icon-circle {\n        background-color: rgba(15, 110, 86, 0.08);\n        border-radius: 14px;\n        width: 52px;\n        height: 52px;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        flex-shrink: 0;\n    }\n\n    .green-icon {\n        width: 26px;\n        height: 26px;\n        fill: #0F6E56;\n    }\n\n    .coord-info {\n        display: flex;\n        flex-direction: column;\n        gap: 2px;\n    }\n\n    .coord-label {\n        font-family: sans-serif;\n        font-size: 13px;\n        color: #777777;\n        font-weight: 500;\n    }\n\n    .coord-value {\n        font-family: sans-serif;\n        font-size: 21px;\n        font-weight: bold;\n        color: #0F6E56;\n    }\n\n    .map-column {\n        flex-grow: 1;\n        width: 100%;\n        display: flex;\n        flex-direction: column;\n        gap: 12px;\n    }\n\n    .location-header {\n        font-family: sans-serif;\n        font-size: 14px;\n        background-color: rgba(15, 110, 86, 0.03);\n        border-left: 4px solid #0F6E56;\n        padding: 10px 16px;\n        border-radius: 0 12px 12px 0;\n        display: flex;\n        gap: 6px;\n        align-items: center;\n        width: 100%;\n        box-sizing: border-box;\n    }\n\n    .location-title {\n        font-weight: bold;\n        color: #0F6E56;\n        flex-shrink: 0;\n    }\n\n    .location-text {\n        font-weight: 500;\n        color: #444444;\n        white-space: nowrap;\n        overflow: hidden;\n        text-overflow: ellipsis;\n    }\n\n    /* Contenedor del mapa panorámico (más ancho que alto) */\n    .map-wrapper {\n        width: 100%;\n        height: 180px; /* Define un alto fijo adecuado */\n        border-radius: 20px;\n        overflow: hidden;\n        border: 1px solid rgba(15, 110, 86, 0.15);\n        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);\n    }\n\n    .map-iframe {\n        width: 100%;\n        height: 100%;\n        border: 0;\n        display: block;\n    }\n</style>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1720,
+        "y": 1420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6d992886570a54c8",
+        "type": "ui-text",
+        "z": "f63e9df3a2c662b4",
+        "group": "e163b4f09d71b30a",
+        "order": 1,
+        "width": "8",
+        "height": "1",
+        "name": "CPU titulo",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "CPU",
+        "valueType": "str",
+        "x": 1510,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "dbef7e14543186d0",
+        "type": "ui-text",
+        "z": "f63e9df3a2c662b4",
+        "group": "e163b4f09d71b30a",
+        "order": 4,
+        "width": "8",
+        "height": "1",
+        "name": "RAM titulo",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "RAM",
+        "valueType": "str",
+        "x": 1510,
+        "y": 1280,
+        "wires": []
+    },
+    {
+        "id": "2c79a0b4729ae4fc",
+        "type": "ui-text",
+        "z": "f63e9df3a2c662b4",
+        "group": "4c97f285f35a8e9e",
+        "order": 2,
+        "width": "4",
+        "height": "1",
+        "name": "TestVelocidad Ping",
+        "label": "Ping: ",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload.ping",
+        "valueType": "msg",
+        "x": 1410,
+        "y": 2060,
+        "wires": []
+    },
+    {
+        "id": "577eaa13c70c693e",
+        "type": "function",
+        "z": "f63e9df3a2c662b4",
+        "name": "Procesar datos de velocidad",
+        "func": "\nlet d = msg.payload;\nlet data = d.speedtest;\n\nif (!d || !data) {\n    node.warn(\"Procesar host: payload incompleto, se ignora\");\n    return null;\n}\n\nmsg.payload = {\n    ping: data.ping,\n    download: data.download,\n    upload: data.upload\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1100,
+        "y": 2080,
+        "wires": [
+            [
+                "2c79a0b4729ae4fc",
+                "82b8a3cc8646c796",
+                "1df456d0f12e2292"
+            ]
+        ]
+    },
+    {
+        "id": "82b8a3cc8646c796",
+        "type": "ui-text",
+        "z": "f63e9df3a2c662b4",
+        "group": "4c97f285f35a8e9e",
+        "order": 3,
+        "width": "4",
+        "height": "1",
+        "name": "TestVelocidad Download",
+        "label": "Download: ",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload.download",
+        "valueType": "msg",
+        "x": 1430,
+        "y": 2100,
+        "wires": []
+    },
+    {
+        "id": "1df456d0f12e2292",
+        "type": "ui-text",
+        "z": "f63e9df3a2c662b4",
+        "group": "4c97f285f35a8e9e",
+        "order": 4,
+        "width": "4",
+        "height": "1",
+        "name": "TestVelocidad Upload",
+        "label": "Upload: ",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload.upload",
+        "valueType": "msg",
+        "x": 1420,
+        "y": 2140,
+        "wires": []
+    }
+]
